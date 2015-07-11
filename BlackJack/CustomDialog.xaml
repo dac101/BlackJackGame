@@ -1,0 +1,32 @@
+﻿<Window  
+    x:Class="BlackJack.CustomDialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+    d:DesignHeight="300" 
+    d:DesignWidth="300"
+              ContentRendered="Window_ContentRendered"
+               Title="Input" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen"
+            >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+
+        <Label Name="lblQuestion" Grid.Column="1">Pick The Value:</Label>
+
+        <WrapPanel Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="0" HorizontalAlignment="Right" Margin="0,15,0,0">
+            <Button IsDefault="True" x:Name="OneBtn" MinWidth="60" Margin="0,0,10,0" Click="OneBtn_Click">1</Button>
+            <Button x:Name="EvenBtn" IsCancel="True" MinWidth="60" Click="EvenBtn_Click">11</Button>
+        </WrapPanel>
+    </Grid>
+</Window>

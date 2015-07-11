@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="BlackJack.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="BlackJack" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="BlackJack.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BlackJack.exe" size="32704">
+      <assemblyIdentity name="BlackJack" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>daTdsQ+AvG8JvnY9MPyy1yM0ly+Y7mufdPCTtdAfWjs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Assets\Images\Background.png" size="797221">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RRhLXb9L9Y09pBNDaAry7WK9VDUci95mNIMxZT3ioFA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\blackjack.png" size="1089153">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cPYo0xfegHGvnBfFfWPw8KKZmNMzCczdBKHGTCaLRho=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\10Clubs.png" size="120220">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zf//Ce/1eMba28Ob7/dLPgmDYul4AocRL7QVuctz/1E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\10Diamonds.png" size="110318">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>g5hslbzzPfOy6E4tWtGXp2CvWlCXFo0k8J7ClZsJt6M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\10Hearts.png" size="136022">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YTaiiE0qk5E4FW4BGZvZnZagI3hLRTR+iM0O0VaPY2g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\10Spades.png" size="94535">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KCQoRi/r445bfJERpcTGpL/lGmh92WvibMBAL5W6030=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\11Clubs.png" size="94028">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zOo/8wGr14Dg9GSLo7ggLVpNqSgeuNhxtZHRz3yZMDA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\11Diamonds.png" size="94256">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>O+Y/joXpXoASjGsiCBRgpvQtdnJIIXoB9aKyjsiTmXo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\11Hearts.png" size="119189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>q0GqZIQstV3gv6e1whIiLdaC8ItWie72Xvp1nR76rp8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\11Spades.png" size="85648">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3+yschuxf1W6fiG1pObj5pWe42s/QklcOgqBewh3w/A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\12Clubs.png" size="113788">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Y3Gwdhogg/tW6CfButq8jYBCRbSBGtvzCkmwGU+0UtY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\12Diamonds.png" size="91063">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>17gdS/njJcXJiw3CPXsnbnbhP10XgUsOBi8Lj6La4Ik=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\12Hearts.png" size="109323">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9coFfJk0J9ArVszicRFWFIga0btnFL9/m7cD7nVAvQM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\12Spades.png" size="75171">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vAIRMOPZxj/luV3BTgO1N5K4vqvVxOfNba7B5rb7Hus=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\13Clubs.png" size="98577">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BgjpAf5QEJ9TCuebgH+0/d3J0pFmf8EJvmqXB8UpfYM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\13Diamonds.png" size="108760">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>syQiutXnTmFNR91rGJPs8wN+Xeen88dMG8IuZso0Mpw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\13Hearts.png" size="111853">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>T6U+7CMP9OLmojJF0YVHvPcXvvY9MT+AwiYGnYCwyg8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\13Spades.png" size="71513">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>X8qkf4OX9Sv+iDkVgurVnAew3fUBf6LuCYzcmIqrYvw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\1Hearts.png" size="96430">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1gbl9iXLhgevXFp38BPePO5zv64h1tPiOLbqos709yk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\1Spades.png" size="115939">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>S0OrXHbpWMm/dyV+U/06KzeRfnrHNURzLQwsSaIqwpU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\2Clubs.png" size="68417">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QZ3PrphG4amLcNOyqAeb2Z13hmBMlRwYb0XUC0gc/MM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\2Diamonds.png" size="133015">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>I5FnqFd2UK3dMYYdKWcXEB3pMqRNLHurc1P2NK9JXxg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\2Hearts.png" size="110612">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SVWY/Bm13nCMSMZ/na1ud9/8ZMDPD/eZM8P9cf2SuyM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\2Spades.png" size="74400">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kFT7DfjmCNxGsubhIH+MrWgsTz3vcNC8sG9OzbnvbhU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\3Clubs.png" size="102980">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2aZlNk4++tgVU7Lgu2cqK2fwKaWMHEfsRosCdTZDaYM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\3Diamonds.png" size="118847">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UfD9P/7loNvAOibkjRliDKsHIyomogDB+edtTvuvOCk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\3Hearts.png" size="125006">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fRR8t7sJrjmJ9l41tSIQA7M/tDeB68CwDHHX00y6ODM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\3Spades.png" size="135032">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3litpq4Rn8R3ihb9FBAWRE/sL7c0VjyJjpMNoTulnlk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\4Clubs.png" size="75625">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>69rF6LlE/ImfrXbnxaWMXV1o129TFWCkhRbIvIc1lxA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\4Diamonds.png" size="92657">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wVE63kW1LeLKgqCrLVEZslQ0lBl9TM/PKNKi/ZviwKQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\4Hearts.png" size="93045">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AnLAKTOsJC4hlrS/zJKC2WTPbq36iXgvghip1lL4MDU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\4Spades.png" size="79876">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2qP6gzj13MFMepLf2JLnl2iHy7i3POz9wz8iExGV3Q0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\5Clubs.png" size="96209">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JRmFJpJttVt4kyDqMaiGxtLfEgqONI0lXxvrUQl6dgg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\5Diamonds.png" size="100023">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jW2Ocei4OJQ++zoXzFJ6r9sg4C6FSgBPqXag75S/MuQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\5Hearts.png" size="78291">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>b8bLLoX3QoFQYkg7JD1KF3OgaxxAllbGQCUKfbKNUKk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\5Spades.png" size="53804">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CBcWj6joLiegxyqSmLBiKPsCN5SzT6vyxmxFyEoKcRE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\6Clubs.png" size="67739">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XatCwZJcgvscm3MB1hNd07kZQBsn1PA5DDiSPkOCMb0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\6Diamonds.png" size="111481">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E167Sd2/oFZFOAOkRB7Ag0Uayh3XuhxKU2lhzJY1HGA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\6Hearts.png" size="111724">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>U3VYFOGv7vdPmufsXOOeSupOrOHVdIgkZZhyuta/hxs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\6Spades.png" size="73412">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qNZimcdbyqWNWLJypEF2qR8fZ/lrrIlP7RLy2URI/bo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\7Clubs.png" size="97928">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>b3vPf95KYQolBMUuTGZ3UcTX6DrUfjVhdpPYr3W/hcE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\7Diamonds.png" size="127025">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PkUveXCUCLBo/w4h+e+e4HnjoYUBGIhyZsh5OXaSAII=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\7Hearts.png" size="116965">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zL4folHdeT2Gd/g0KF6XV9ntJ4KGJU7kuR+y0Ay89To=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\7Spades.png" size="92597">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i/ZGtuK3DchIId0tt937HYoagNc3kpztR9Sv3w4MG1c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\8Clubs.png" size="84723">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vLzES6LldPw+NeNY+iySvBnzHiW8XFHexIFpk58yI4Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\8Diamonds.png" size="78217">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9uqNKqZ9tLQoPV89bsLCDpotqCVJobJo3+63OaDpsL4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\8Hearts.png" size="123827">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qobVjnnE0HtwQ9uemr2qqkOyOLIg3P7fVWfT5Z7c47g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\8Spades.png" size="128935">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jjNzEd0OZe10ifwXLpc/QmT9Wuk2B9t5wjE2jI0ryKA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\9Clubs.png" size="59510">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qgfi/zoxG5Dq1jZ+1aOP63XJOPOYZtFgoggHZ+l+lw4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\9Diamonds.png" size="111002">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OFVTd/4YtRFerRURmq/1yip19gQDhBTqStdZDt3V5Ro=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\9Hearts.png" size="87782">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E8g4bD6+s2HxmpnZIfrhTgeaYJdv2RH9A4x1jO6x65s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\9Spades.png" size="88667">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7ytRY7hqDH+X55fsbt/xPEEmTZSYAzPBMDZU6RtIh40=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\AceClubs.png" size="76260">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JRgK5YbAlmwv79VoJeuM0TWxmzDuSUU53IgFoP5QUWw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\AceDiamonds.png" size="123500">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oZxkX7CBwZG8is60ztSYDzGGd9bID5YIP6VVSj486/U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\Blank.png" size="1628">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>l5ZUPruZxaqUT7UwXh4nMMFhQGzjaQo7cSKw1L+1qVw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\EndDeck.png" size="139725">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VtBKen+CVEVyyRBAA0WrOnU0AeJC+Jg7wDpGzuyb+5I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\Joker1.png" size="83401">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cEm3PvZ2Z+Hl9SdS1G8Z/dMk+Ca3kMxgb65mh1iU1J4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Assets\Images\cards\Deck1\Joker2.png" size="100413">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>b27y6VGy4DYl56/HkxTsLG8SwMO9otUOR+JPqWiYL3k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="BlackJack.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fzxBSr45tumrN8SNWWL0IeqRlxoh8+san/F4n6/GZJ4=</dsig:DigestValue>
+    </hash>
+  </file>
+</asmv1:assembly>
